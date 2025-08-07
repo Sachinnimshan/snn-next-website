@@ -13,9 +13,9 @@ const config: Config = {
     },
     extend: {
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "7px",
+        md: "5px",
+        sm: "3px",
       },
       backgroundImage: {
         "triangle-bg":
