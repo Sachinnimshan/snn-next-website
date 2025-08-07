@@ -36,6 +36,7 @@ const ExperiencePage = () => {
             )
             .map((item) => (
               <VerticalTimelineElement
+                visible
                 key={item._id}
                 date={`${new Date(item.start).toLocaleDateString("en-US", {
                   year: "numeric",
@@ -64,6 +65,7 @@ const ExperiencePage = () => {
                     : "none",
                   borderRadius: "12px",
                   padding: "1.5rem 2rem",
+                  zIndex: 5000,
                 }}
                 contentArrowStyle={{
                   borderRight: `5px solid ${APP_COLORS.CONTENT_BACKGROUND_COLOR}`,

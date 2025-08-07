@@ -31,6 +31,7 @@ const AcademicsPage = () => {
         <VerticalTimeline lineColor={APP_COLORS.PRIMARY_WHITE_COLOR}>
           {data?.map((item) => (
             <VerticalTimelineElement
+              visible
               key={item._id}
               date={`${new Date(item.start).getFullYear()} - ${new Date(
                 item.ends
