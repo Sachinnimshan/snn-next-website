@@ -3,6 +3,7 @@ import truncateText from "@/utils/truncateText";
 import { motion } from "framer-motion";
 import { FaGithub, FaYoutube, FaGlobe } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -32,11 +33,13 @@ const ProjectCard = ({ project, i }: ProjectCardProps) => {
         onClick={() => router.push(`/projects/${project._id}`)}
       >
         {project.image && (
-          <img
+          <Image
             src={project.image}
             alt={project.title}
             className="w-full h-48 object-cover"
             loading="lazy"
+            width={100}
+            height={100}
           />
         )}
         <div className="p-4 flex-grow">

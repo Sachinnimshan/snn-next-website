@@ -71,7 +71,7 @@ const IndustryProjectCard = ({ project, i }: IndustryProjectCardProps) => {
         {project.technologies.map((tech) => (
           <span
             key={tech}
-            className="text-[9px] sm:text-xs uppercase bg-secondaryBgColor text-thirdTextColor px-3 py-1 rounded-full font-semibold shadow-sm transition hover:bg-secondaryColor hover:text-white"
+            className="text-xs uppercase bg-secondaryBgColor text-thirdTextColor px-3 py-1 rounded-full font-semibold shadow-sm transition hover:bg-secondaryColor hover:text-white"
           >
             {tech}
           </span>
